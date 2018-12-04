@@ -1,0 +1,25 @@
+<?php
+
+    $domainUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+
+    header("Content-type: application/json");
+    // header("Access-Control-Allow-Credentials: true");
+    // header("Access-Control-Allow-Origin: ". str_replace('.', '-','https://example.com') .".cdn.ampproject.org");
+    header("AMP-Access-Control-Allow-Source-Origin: " . $domainUrl);
+    // header("Access-Control-Expose-Headers: AMP-Access-Control-Allow-Source-Origin");
+    // header("AMP-Redirect-To: https://example.com/thankyou.amp.html");
+    // header("Access-Control-Expose-Headers: AMP-Redirect-To, AMP-Access-Control-Allow-Source-Origin"); 
+  
+    function getLikeAmount()
+    {
+        return rand(10, 99);
+    }
+
+?>{
+    "items":[
+        {
+            "isLike": false,
+            "likeAmount": <?php echo getLikeAmount(); ?>
+        }
+    ]
+}
