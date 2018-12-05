@@ -5,10 +5,11 @@
     jsonHeaderOutput();
 
     echo json_encode([
-        'error'         => false,
-        'error_message' => 'Success !',
-        'post'          => $_POST,
-        'get'           => $_GET
+        'error'             => false,
+        'error_message'     => null,
+        'success_message'   => 'Success !',
+        'post'              => $_POST,
+        'get'               => $_GET
     ], JSON_PRETTY_PRINT);
 
 ?>

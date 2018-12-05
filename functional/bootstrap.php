@@ -44,6 +44,9 @@ function jsonHeaderOutput()
 }
 
 /**
+ * redirect to url
+ *      - https only
+ *
  * @param $url
  */
 function ampRedirect($url)

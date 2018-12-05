@@ -46,7 +46,7 @@ init();
                             <template type="amp-mustache">
                                 <p>[submit-success]</p>
                                 <p>Thanks  <b>{{post.name}}</b> </p>
-                                <p>Message is: <b>{{message}}</b></p>
+                                <p>Message is: <b>{{success_message}}</b></p>
                             </template>
                         </div>
                         <div submit-error>
@@ -66,11 +66,6 @@ init();
                                 <input type="text" name="name" value="charlie" required>
                             </label>
                             <br>
-                            <label>
-                                <span>Email:</span>
-                                <input type="email" name="email" value="charlie.world@hotmail.com" required>
-                            </label>
-                            <br>
                             <input type="submit" value="action-nhr post & redirect (for background)">
                         </fieldset>
                     </form>
@@ -83,11 +78,6 @@ init();
                             <label>
                                 <span>Name:</span>
                                 <input type="text" name="name" value="david" required>
-                            </label>
-                            <br>
-                            <label>
-                                <span>Email:</span>
-                                <input type="email" name="email" value="david@hotmail.com" required>
                             </label>
                             <br>
                             <input type="submit" value="action get">
