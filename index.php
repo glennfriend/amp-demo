@@ -1,3 +1,8 @@
+<style>
+body {
+    font-size: 24px;
+}
+</style>
 <?php
 
 foreach (glob('functional/*', GLOB_ONLYDIR) as $folder) {

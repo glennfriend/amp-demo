@@ -43,6 +43,18 @@ function jsonHeaderOutput()
     // header("Access-Control-Expose-Headers: AMP-Redirect-To, AMP-Access-Control-Allow-Source-Origin");
 }
 
+/**
+ * @param $url
+ */
+function ampRedirect($url)
+{
+    $domainUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+
+    header("AMP-Redirect-To: " . $url);
+    header("AMP-Access-Control-Allow-Source-Origin: " . $domainUrl);
+    header("Access-Control-Expose-Headers: AMP-Redirect-To, AMP-Access-Control-Allow-Source-Origin");
+}
+
 function getCssContent()
 {
     return file_get_contents(__DIR__ . '/inside.css');
