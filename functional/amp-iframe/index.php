@@ -33,7 +33,7 @@ init();
                                 layout="responsive"
                                 frameborder="0"
                                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDG9YXIhKBhqclZizcSzJ0ROiE0qgVfwzI&q=iceland">
-                        <amp-img layout="fill" src="../amp.png" placeholder></amp-img>
+                        <amp-img layout="fill" src="/dist/example/amp.png" placeholder></amp-img>
                     </amp-iframe>
                     <br>
 
@@ -43,7 +43,17 @@ init();
                                 layout="responsive"
                                 frameborder="0" style="border:0"
                                 allowfullscreen>
-                        <amp-img layout="fill" src="../amp.png" placeholder></amp-img>
+                        <amp-img layout="fill" src="/dist/example/amp.png" placeholder></amp-img>
+                    </amp-iframe>
+                    <br>
+
+                    <amp-iframe
+                            width="300"
+                            height="279"
+                            layout="fixed"
+                            frameborder="0"
+                            sandbox="allow-scripts allow-same-origin"
+                            src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=NY+Manhattan&amp;ie=UTF8&amp;hq=&amp;hnear=NY+Manhattan&amp;z=14&amp;iwloc=&amp;output=embed">
                     </amp-iframe>
                     <br>
 
