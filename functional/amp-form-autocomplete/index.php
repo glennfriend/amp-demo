@@ -49,9 +49,8 @@ $post =  url('post.php');
         </div>
 
         <ul>
-            <li>這裡的樣本是 "man"</li>
+            <li>這裡的樣本是 "man" (輸入什麼, 結果都一樣)</li>
             <li>至少要輸入三個字元</li>
-            <li>輸入什麼, 結果都一樣</li>
             <li>輸入完後, 鍵入 Tab 可以選擇列表內容</li>
             <li>缺少: auto focus to amp-form input</li>
         </ul>
